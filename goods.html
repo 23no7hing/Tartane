@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartane</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+        display: flex; /* Устанавливаем горизонтальное расположение элементов */
+        justify-content: space-between; /* Раздвигаем элементы по краям */
+        align-items: center; /* Выравнивание по вертикали */
+        background-color: #ffffff;
+        padding: 10px 20px;
+        margin-top: 0px;
+        font-size: 22px;
+        margin-bottom: 40px;
+        }
+
+        header .logo img {
+        width: 160px;
+        height: 60px;
+        
+        }
+
+        nav {
+        display: flex;
+        gap: 40px;
+        }
+
+            nav a {
+        text-decoration: none;
+        color: #BC7032;
+        }
+
+        .contact { 
+        text-align: right; /* Выравнивание текста контакта по правому краю */
+        color:#BC7032 ;
+        font-size: 16px
+        }
+        
+        .hero {
+        height: 100vh; /* Высота равна 100% от высоты экрана */
+        text-align: center;
+        padding: 25px 20px;
+        background: url('image1.jpg') center/cover no-repeat; /* Картинка растягивается и центрируется */
+        color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Центрирование содержимого по вертикали */
+        align-items: center; /* Центрирование содержимого по горизонтали */
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        body {
+            margin: 0; 
+        }
+        .full-width-image {
+            margin-bottom: 0px;
+            width: 100%; 
+            height: 370px; 
+            object-fit: cover; 
+        }
+        .mainpage-image2{
+            margin-top: 20px;
+            width: 100%; 
+            height: 120px; 
+            object-fit: cover; 
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #fff;
+
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            }
+        }
+        .container {
+            display: flex;
+            width: 100%; /* Ширина на весь экран */
+            max-width: 1200px; /* Максимальная ширина контейнера */
+            height: 200px; /* Высота контейнера */
+        }
+
+        .image-left,
+        .image-right,
+        .color-block {
+            flex: 0 0 52%; /* Цветной блок занимает 50% ширины */
+            background-color: #BC7032; /* Цветовой блок */
+            color: white; /* Цвет текста внутри блока */
+            display: flex; /* Используем flexbox для центрирования текста */
+            justify-content: center; /* Центрирование содержимого по горизонтали */
+            align-items: center; /* Центрирование содержимого по вертикали */
+            font-size: 16px; /* Размер шрифта */
+        }
+
+        .image-left,
+        .image-right {
+            width: auto; /* Автоматическая ширина для изображений */
+            height: 225px; /* Высота на весь экран контейнера */
+        }
+
+        .color-block {
+            background-color: #BC7032; /* Цветовой блок */
+            display: flex;
+            width: 1000px; /* Ширина на весь экран */
+            max-width: 1200px; /* Максимальная ширина контейнера */
+            height: 225px; /* Высота контейнера */
+            font-size: 14px; /* Размер шрифта */
+        }
+
+        .content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 6 колонок */
+            gap: 0px; /* Отступы между элементами */
+        }
+
+        .grid-item {
+            text-align: center; /* Выравнивание текста по центру */
+        }
+
+        .grid-item img {
+            width: auto; /* Ширина изображения на 100% от родительского элемента */
+            height: auto; /* Автоматическая высота */
+        }
+        .color-block p {
+            margin: 5px 0 0; /* Отступы у параграфа */
+            font-size: 12px; /* Размер шрифта текста */
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <a href="main.html">
+                    <img src="logo.jpg" alt="Логотип компании">
+                </a>
+            </div>
+            <nav>
+                <a href="about.html">О компании</a>
+                <a href="goods.html">Продукция</a>
+                <a href="control.html">Качество</a>
+                <a href="work.html">Работа</a>
+            </nav>
+            <div class="contact">
+                <p>+7-977-777-77-77<br>Пн-Вс: 8:00-17:00</p>
+            </div>
+        </header>
+        <div class="container">
+            <img src="goodspage-image1.jpg" alt="Левое изображение" class="image-left">
+            <div class="color-block">
+                <h1>Вкус, знакомый с детства</h1>
+            <p>Мы готовим выпечку вручную и используем традиционные рецепты – словно готовит любимая бабушка.</p></div>
+            <img src="goodspage-image2.jpg" alt="Правое изображение" class="image-right">
+        </div>
+        <div class="content">
+            <h2></h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="Ягод корз.jpg" alt="Товар 1">
+                </div>
+                <div class="grid-item">
+                    <img src="Хлеб пшеничный.jpg" alt="Товар 2">
+                </div>
+                <div class="grid-item">
+                    <img src="Багет с ветч.jpg" alt="Товар 3">
+                </div>
+                <div class="grid-item">
+                    <img src="Батон нарез.jpg" alt="Товар 4">
+                </div>
+                <div class="grid-item">
+                    <img src="Беляш печ.jpg" alt="Товар 5">
+                </div>
+                <div class="grid-item">
+                    <img src="Ватрушка вен.jpg" alt="Товар 6">
+                </div>
+                <div class="grid-item">
+                    <img src="Круасан.jpg" alt="Товар 7">
+                </div>
+                <div class="grid-item">
+                    <img src="Беляш.jpg" alt="Товар 8">
+                </div>
+                <div class="grid-item">
+                    <img src="Пирожок с кар.jpg" alt="Товар 9">
+                </div>
+                <div class="grid-item">
+                    <img src="Гнездо с вет.jpg" alt="Товар 10">
+                </div>
+                <div class="grid-item">
+                    <img src="Жюльен.jpg" alt="Товар 11">
+                </div>
+                <div class="grid-item">
+                    <img src="Пицца.jpg" alt="Товар 12">
+                </div>
+                <div class="grid-item">
+                    <img src="Сочень.jpg" alt="Товар 13">
+                </div>
+                <div class="grid-item">
+                    <img src="Курник.jpg" alt="Товар 14">
+                </div>
+                <div class="grid-item">
+                    <img src="Самса.jpg" alt="Товар 15">
+                </div>
+                <div class="grid-item">
+                    <img src="Кекс.jpg" alt="Товар 16">
+                </div>
+                <div class="grid-item">
+                    <img src="Конверт.jpg" alt="Товар 17">
+                </div>
+                <div class="grid-item">
+                    <img src="Лепёшка.jpg" alt="Товар 18">
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <footer>
+        <div class="social-icons">
+            <a href="#">Telegram</a>
+            <a href="#">VK</a>
+            <a href="#">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>

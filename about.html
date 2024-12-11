@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartane</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+        display: flex; /* Устанавливаем горизонтальное расположение элементов */
+        justify-content: space-between; /* Раздвигаем элементы по краям */
+        align-items: center; /* Выравнивание по вертикали */
+        background-color: #ffffff;
+        padding: 10px 20px;
+        margin-top: 0px;
+        font-size: 22px;
+        margin-bottom: 40px;
+        }
+
+        header .logo img {
+        width: 160px;
+        height: 60px;
+        
+        }
+
+        nav {
+        display: flex;
+        gap: 40px;
+        }
+
+            nav a {
+        text-decoration: none;
+        color: #BC7032;
+        }
+
+        .contact { 
+        text-align: right; /* Выравнивание текста контакта по правому краю */
+        color:#BC7032 ;
+        font-size: 16px
+        }
+        
+        .hero {
+        height: 100vh; /* Высота равна 100% от высоты экрана */
+        text-align: center;
+        padding: 25px 20px;
+        background: url('image1.jpg') center/cover no-repeat; /* Картинка растягивается и центрируется */
+        color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Центрирование содержимого по вертикали */
+        align-items: center; /* Центрирование содержимого по горизонтали */
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .products img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #fff;
+        }
+        .full-width-image {
+            margin-bottom: px;
+            width: 100%; 
+            height: 267px; 
+            object-fit: cover; 
+        }
+        .container {
+            display: flex;
+            width: 80%; /* Ширина контейнера */
+            max-width: 1200px; /* Максимальная ширина контейнера */
+        }
+
+        .main-header {
+            flex: 1; /* Основной заголовок занимает 1 часть пространства */
+            font-size: 28px; /* Размер шрифта основного заголовка */
+            margin-right: 20px; /* Отступ справа от основного заголовка */
+            color: #000000; /* Цвет текста основного заголовка */
+        }
+
+        .sub-headers {
+            display: flex; /* Горизонтальное расположение подзаголовков */
+            flex: 2; /* Занимает 2 части пространства */
+            margin-left: 100px; /* Сдвиг подзаголовков вправо на 100px */
+        }
+
+        .sub-header {
+            margin-right: 300px; /* Отступ между подзаголовками */
+        }
+
+        .sub-header:last-child {
+            margin-right: 0; /* Убираем отступ у последнего подзаголовка */
+        }
+
+        .sub-header h2 {
+            margin: 0; /* Убираем отступы у заголовка */
+            font-size: 20px; /* Размер шрифта подзаголовка */
+            color: #F6B529; /* Цвет текста подзаголовка */
+        }
+
+        .sub-header p {
+            margin: 5px 0 0; /* Отступы у параграфа */
+            font-size: 16px; /* Размер шрифта текста */
+            color: #000000; /* Цвет текста параграфа */
+            line-height: 1.5; /* Высота строки для лучшей читабельности */
+            display: -webkit-box; /* Используем flexbox для ограничения строк */
+            -webkit-box-orient: vertical;
+        }
+        p {
+            line-height: 1.5; /* Увеличиваем межстрочный интервал для лучшей читаемости */
+            margin: 0; /* Убираем отступы */
+        }
+        .full-width-image2 {
+            margin-bottom: px;
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <a href="main.html">
+                    <img src="logo.jpg" alt="Логотип компании">
+                </a>
+            </div>
+            <nav>
+                <a href="about.html">О компании</a>
+                <a href="goods.html">Продукция</a>
+                <a href="control.html">Качество</a>
+                <a href="work.html">Работа</a>
+            </nav>
+            <div class="contact">
+                <p>+7-977-777-77-77<br>Пн-Вс: 8:00-17:00</p>
+            </div>
+        </header>
+        </nav>
+    </header>
+    <body>
+        <img src="aboutpage-image1.jpg" alt="1-st photo" class="full-width-image">
+    </body>
+    <div class="container">
+        <div class="main-header">
+            Наши традиции
+        </div>
+        <div class="sub-headers">
+            <div class="sub-header">
+                <h2>Натуральные продукты</h2>
+                <p>    При приготовлении не используются добавки и консерванты.<br> 
+                    При этом, значительная часть продукции традиционно изготавливаются вручную.<br>
+                     Чтобы  приготовить вашу любимую продукцию, мы отбираем лучшее сырье.</p>
+            </div>
+            <div class="sub-header">
+                <h2>Традиционные рецепты</h2>
+                <p>    Tartane соединяет традиции с передовыми технологиями. В пекарнях уживаются настоящий французский круассан и украинский хлеб, русские пирожки и сосиски в тесте. Мы постоянно, собираем лучшие рецепты всех времен, чтобы удивлять вас!.</p>
+            </div>
+            <div class="sub-header">
+                <h2>Новые вкусы</h2>
+                <p>Аромат свежевыпеченного круассана, хруст багета и ваши довольные улыбки делают нас счастливыми. В нашей команде работают профессионалы, которых объединяет любовь к своему делу. Мы знаем все о хлебе, и с радостью делимся своими знаниями с вами.</p>
+            </div>
+        </div>
+    </div>
+    <body>
+        <img src="aboutpage-image2.jpg" alt="1-st photo" class="full-width-image2">
+    </body>
+    <footer>
+        <div class="social-icons">
+            <a href="#">Telegram</a>
+            <a href="#">VK</a>
+            <a href="#">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
